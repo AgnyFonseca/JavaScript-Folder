@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers with JS</title>
+    <style>
+        body {
+            font: 12pt Arial;
+        }
+        button {
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Working with numbers</h1>
+    <button onclick="calculate()">Click to calculate</button>
+    <section id="result">
+        <p>The answer is coming here...</p>
+    </section>
+    <script>
+        window.alert('Welcome to my website!')
+        function calculate() {
+            let n1 = Number(window.prompt('Give a number: '))
+            let res = document.querySelector('section#result')
+            res.innerHTML = `<p>The double of ${n1} is ${n1 * 2} and the half is ${n1 / 2}!</p>` 
+        }
+    </script>
+    
+</body>
+</html>

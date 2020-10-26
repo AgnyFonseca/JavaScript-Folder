@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datas with JS</title>
+    <style>
+        body {
+            font: 12pt Arial;
+        }
+        button {
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Working with datas v2.0</h1>
+    <button onclick="begin()">Click to begin</button>
+    <section id="result">
+        <p>Here it's going to appear the result...</p>
+    </section>
+    <script>
+        function begin() {
+            let name = window.prompt('What is your name?')
+            let res = document.getElementById('result')
+            res.innerHTML = `<p>Hello, <strong>${name}</strong>. It's a pleasure to meet you! &#x1F596;</p>`
+        }
+    </script> 
+</body>
+</html>

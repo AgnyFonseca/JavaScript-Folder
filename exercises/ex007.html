@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers in JS</title>
+    <style>
+        body {
+            font: 12pt Arial;
+        }
+        button {
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Students Grade's Average</h1>
+    <button onclick="average()">Grades average, click to start!</button>
+    <section id="result">
+        <p>The answer is coming here...</p>
+    </section>
+
+    <script>
+        function average() {
+            let name = window.prompt('What is the name of the student?')
+            let n1 = Number(window.prompt(`What was the first ${name}s grade?`))
+            let n2 = Number(window.prompt(`What was the other ${name}s grade?`))
+            gradeAverage = (n1 + n2) / 2
+            let res = document.getElementById('result')
+            res.innerHTML = `<p>Calculating the final grade average of <mark>${name}</mark>.</p>`
+            res.innerHTML = `<p>The grades were <mark>${n1}</mark> and <mark>${n2}</mark>.</p>`
+            res.innerHTML += `<p>The final grade average is: <mark>${gradeAverage}</mark></p>`
+            
+        }
+
+    </script>
+    
+</body>
+</html>

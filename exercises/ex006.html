@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding two numbers.</title>
+    <style>
+        body {
+            font: 12pt Arial;
+        }
+        button {
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adding two numbers.</h1>
+    <button onclick="calculate()">Start adding</button>
+    <section id="res">
+        <p>Result:</p>
+    </section>
+
+    <script>
+        function calculate() {
+            let n1 = Number(window.prompt('Give a number: '))
+            let n2 = Number(window.prompt('Give another number: '))
+            total = n1 + n2
+
+            let res = document.querySelector('section#res')
+            res.innerHTML = `<p>The addition of number <mark>${n1}</mark> and <mark>${n2}</mark> is <strong>${total}!</strong></p>`
+        }
+
+    </script>
+</body>
+</html>

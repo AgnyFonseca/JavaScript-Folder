@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slicing Strings</title>
+</head>
+<body>
+
+    <script>
+        var name = prompt('What is your name?')
+        var firstChar = name.slice(0,1)
+        var upperCaseFirstChar = firstChar.toUpperCase()
+        var restOfName = name.slice(1, name.length)
+        restOfName = restOfName.toLowerCase()
+        var capitalisedName = upperCaseFirstChar + restOfName
+        alert(`Hello, ${capitalisedName}`)
+
+    </script>
+</body>
+</html>

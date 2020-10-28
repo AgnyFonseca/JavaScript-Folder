@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's Buying lunch</title>
+</head>
+<body>
+
+    <script>
+        var names = ['Angela', 'Jack', 'Pam', 'James', 'Lara', 'Jason']
+        function whosPaying(names) {
+            var numberOfPeople = names.length
+            var randomPersonPosition = Math.floor(Math.random() * numberOfPeople)
+            var randomPersonPosition = names[randomPersonPosition]
+
+            return randomPersonPosition + ' is going to buy lunch today!'
+        }
+        
+    </script>
+</body>
+</html>

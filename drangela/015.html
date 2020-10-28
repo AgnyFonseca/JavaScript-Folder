@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci sequence</title>
+</head>
+<body>
+    
+    <script>
+        function fibonacciGenerator (n) {
+            var output = []
+            if (n === 1) {
+                output = [0]
+            } else if (n === 2) {
+                output = [0, 1]
+            } else {
+                output = [0, 1]
+                for (var i = 2; i < n; i++)
+                    output.push(output[output.length - 2] + output[output.length - 1])
+            }
+            return output;
+        }
+
+        output = fibonacciGenerator(24)
+        console.log(output)
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers with JS</title>
+    <style>
+        body {
+            font: 12pt Arial;
+        }
+        button {
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Some calculations in JS</h1>
+    <button onclick="calculate()">Click to start</button>
+    <section id="result">
+        <p>Result:</p>
+    </section>
+    
+    <script>
+        function calculate() {
+            let num = Number(window.prompt('Give a number: '))
+            let res = document.querySelector('section#result')
+            res.innerHTML = `<p>The given number is <strong>${num}</strong></p>`
+            res.innerHTML += `<p>It's absolute value is <strong>${Math.abs(num)}</strong></p>`
+            res.innerHTML += `<p>It's whole part is <strong>${Math.trunc(num)}</strong></p>`
+            res.innerHTML += `<p>The nearest whole value is <strong>${Math.round(num)}</strong></p>`
+            res.innerHTML += `<p>It's square root is <strong>${Math.sqrt(num)}</strong></p>`
+            res.innerHTML += `<p>It's cubic root is <strong>${Math.cbrt(num)}</strong></p>`
+            res.innerHTML += `<p>The value of ${num} <sup>2</sup> is <strong>${Math.pow(num, 2)}</strong></p>`
+            res.innerHTML += `<p>The value of ${num}<sup>3</sup> is <strong>${Math.pow(num, 3)}</strong></p>`
+        }
+    </script>
+</body>
+</html>
